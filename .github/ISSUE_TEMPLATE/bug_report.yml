@@ -1,0 +1,55 @@
+name: Something is wrong
+description: Kaveo does something it should not, or does not do what it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting it. Please leave out anything personal — file names, folder paths,
+        server addresses — unless the problem is about them.
+  - type: input
+    id: version
+    attributes:
+      label: Kaveo version
+      description: Settings › About.
+      placeholder: Kaveo version 0.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: How it is installed
+      options:
+        - .deb (Ubuntu, Debian, Mint…)
+        - .rpm (Fedora, openSUSE…)
+        - Arch (kaveo-bin)
+        - AppImage
+        - Linux tarball
+        - Windows installer (.exe)
+        - Windows .msi
+        - Windows portable (.zip)
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System and graphics card
+      placeholder: Ubuntu 24.04, NVIDIA RTX 4070, driver 570
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen
+      placeholder: |
+        1. Open …
+        2. Click …
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log
+      description: If you can, attach the zip from Settings › Diagnostics › Export a diagnostic bundle.
