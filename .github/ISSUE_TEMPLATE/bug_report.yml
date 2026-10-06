@@ -34,7 +34,16 @@ body:
     id: system
     attributes:
       label: System and graphics card
+      description: Filled in by Kaveo when you use Settings › About › Report a problem.
       placeholder: Ubuntu 24.04, NVIDIA RTX 4070, driver 570
+  - type: textarea
+    id: components
+    attributes:
+      label: Components
+      description: >-
+        What each component is on this machine — filled in by Kaveo when you use Settings › About ›
+        Report a problem. Versions only, never where a file is.
+      render: text
   - type: textarea
     id: what
     attributes:
