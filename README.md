@@ -10,7 +10,7 @@ its **support**; the application's source is not here.
 - **Guide** — [the user guide](https://mattia-cenci.github.io/kaveo-website/).
 - **Something is wrong** — [open an issue](https://github.com/mattia-cenci/kaveo-releases/issues/new/choose).
 - **Questions and ideas** — [Discussions](https://github.com/mattia-cenci/kaveo-releases/discussions).
-- **Licence keys** — mattia.cenci@bosimano.com.
+- **Licence keys** — support@kaveoplayer.com.
 
 Every release is signed: its `latest.json` carries an ed25519 signature that Kaveo checks before it
 installs anything, and every file's SHA-256 is listed there.
